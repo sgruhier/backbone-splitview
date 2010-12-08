@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Backbone Demo: Todos</title>
+    <link href="stylesheets/app.css" media="all" rel="stylesheet" type="text/css"/>
+    <script src="javascripts/jquery-1.4.2.js"></script>
+    <script src="javascripts/underscore-1.1.3.js"></script>
+    <script src="javascripts/backbone.js"></script>
+  </head>
+
+  <body>
+		<h1>
+		  SplitView based on backbone.js and some CSS3 flavors
+		  <a href="http://twitter.com/share" class="twitter-share-button" data-text="SplitView based on backbone.js of @documentcloud with some CSS3 flavor" data-count="horizontal" data-via="sgruhier">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+		</h1>
+		<p>
+			<code>SplitView</code> is a <code>Backbone.View</code> sub class.<br/>
+			This class binds mouse events on existing HTML markup in the page. <br/>
+			2 CSS classes are used <code>vsplit</code> and <code>hsplit</code>. 
+			<br/>
+			<br/>			
+			It also uses CSS3 flex box layout and gradient.<br/>
+		</p>
+		<p>
+		  This demo works only on decent browsers.
+		</p>
+    <div id="container">
+      <div class="hbox">
+        <div class="vbox">
+        	<div class="fix">
+        		Fixed width<br/>
+						Fixed height<br/>
+						Min width: 200px<br/>
+						Min height: 100px<br/>
+        	</div>
+         	<div class="vsplit"></div>
+				 	<div class="flex">
+				 		Flex width<br/>
+						Fixed height<br/>
+						Min width: 200px<br/>
+						Min height: 200px<br/>
+				 	</div>
+        </div>
+      	<div class="hsplit"></div>
+			  <div class="flex">
+			  	Flex width<br/>
+					Flex height<br/>
+					Min height: 100px<br/>
+			  </div>
+		 </div>
+    </div>
+    <script src="javascripts/splitview.js"></script>
+    <script src="javascripts/app.js"></script>
+  </body>
+
+</html>
