@@ -43,7 +43,7 @@ window.SplitView = Backbone.View.extend({
     this.mouseInfo   = {pos: event.pageY, attr: 'pageY'}
   },
   
-  mouseMove: function(e) {
+  mouseMove: function(event) {
     var info       = this.elementInfo,
         d          = event[this.mouseInfo.attr] - this.mouseInfo.pos,
         size       = info.size + d;
